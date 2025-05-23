@@ -6,7 +6,7 @@ set /p vyska=zadej vysku v metrech:
 set /p vaha=zadej vahu v kg:
 
 
-set vypocet=%vaha% / %vyska% * %vyska%
+set /a vypocet=%vaha% / (%vyska% * %vyska%)
 
 echo BMI pro vysku %vyska% a vahu %vaha% je: %vypocet%
 
